@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Base style resets and clean scrollbars */
+body {
+  background-color: #faf9f6; /* Warm elegant off-white */
+  color: #1c1a17; /* Soft charcoal black */
+  font-family: var(--font-sans);
+}
+
+/* Custom fade effects and smooth transitions */
+.fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stylized markdown formatting overrides to match our Swiss design */
+.markdown-body h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #1c1a17;
+  letter-spacing: -0.025em;
+  border-bottom: 1px solid rgba(28, 26, 23, 0.1);
+  padding-bottom: 0.25rem;
+}
+
+.markdown-body h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #2e2a24;
+}
+
+.markdown-body h3 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #403a31;
+}
+
+.markdown-body p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.625;
+}
+
+.markdown-body ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.markdown-body ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.markdown-body li {
+  margin-bottom: 0.25rem;
+  line-height: 1.5;
+}
+
+.markdown-body blockquote {
+  border-left: 3px solid #d97706; /* Warm amber borders */
+  background-color: #fef3c7;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  border-radius: 0.375rem;
+  font-style: italic;
+  color: #78350f;
+}
+
+.markdown-body code {
+  font-family: var(--font-mono);
+  background-color: rgba(28, 26, 23, 0.05);
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 0.85em;
+}
+
+.markdown-body pre {
+  background-color: #1e1e1e;
+  color: #f8f8f2;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow: auto;
+  margin: 1rem 0;
+  font-size: 0.875rem;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+  border-radius: 0;
+  font-size: inherit;
+}
+
+.markdown-body table {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+}
+
+.markdown-body th, .markdown-body td {
+  border: 1px solid rgba(28, 26, 23, 0.1);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.markdown-body th {
+  background-color: rgba(28, 26, 23, 0.03);
+  font-weight: 600;
+}
+

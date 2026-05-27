@@ -1,0 +1,6 @@
+{
+  "name": "SpiegaLivelli",
+  "description": "Assistente didattico per la scuola superiore italiana che spiega concetti disciplinari calibrati su tre livelli di studio (Biennio, Triennio e Maturità). Alza il livello o approfondisci i concetti anche caricando documenti.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
